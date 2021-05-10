@@ -1,3 +1,0 @@
-../../sampledata/mni_images/MNI_T1_1mm_0018_MNI_T1_1mm_0018.nii.gz
-../../sampledata/mni_images/MNI_T1_1mm_0019_MNI_T1_1mm_0019.nii.gz
-../../sampledata/mni_images/MNI_T1_1mm_0020_MNI_T1_1mm_0020.nii.gz
