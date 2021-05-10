@@ -81,5 +81,4 @@ dependencies:
   - zstd=1.4.5=h9ceee32_0
   - pip:
     - mako==1.0.4
-    - pycuda==2017.1
 
