@@ -1,4 +1,4 @@
-name: line-integral-loss
+name: deep-image-pet
 channels:
   - lukepfister
   - conda-forge
