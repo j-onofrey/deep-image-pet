@@ -1,0 +1,2 @@
+../../data/sample_data/prostate_T2_1.nii.gz
+../../data/sample_data/prostate_T2_2.nii.gz

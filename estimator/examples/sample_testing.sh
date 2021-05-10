@@ -1,0 +1,12 @@
+SemanticClassifier.py \
+  -d \
+  -i sample_data_input_testing.txt \
+  -o sample_results/ \
+  -model_path sample_model/ \
+  -model UNet2d \
+    --dropout_rate 0.0 \
+    --num_output_channels 2 \
+    --num_filters 16 \
+    --num_levels 3 \
+  --patch_size 128 128 1 \
+  --batch_size 16 \
