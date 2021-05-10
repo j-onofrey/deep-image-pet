@@ -9,10 +9,13 @@ Here, we provide an example to train a deep neural network using the U-Net model
 
 ### Setup
 
-Install the anaconda environment for deep-image-pet using the provided `environment.yml` file.
-
+Install the [anaconda environment](https://conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html#) for deep-image-pet using the provided `environment.yml` file.
 ```
-$ conda ...
+$ conda env create -f environment.yml
+```
+Once setup, you can activate your conda environment:
+```
+$ conda activate deep-image-pet
 ```
 
 For convenience, you can add the `deep-image-pet/estimator/` folder to your PATH by sourcing the following script on the command line (using the BASH shell):
