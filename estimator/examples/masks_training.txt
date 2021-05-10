@@ -1,0 +1,15 @@
+../../sampledata/mni_masks/MNI_T1_1mm_0001_0001_stripped_mask_0001_MNI_T1_1mm_0001.nii.gz
+../../sampledata/mni_masks/MNI_T1_1mm_0002_0002_stripped_mask_0002_MNI_T1_1mm_0002.nii.gz
+../../sampledata/mni_masks/MNI_T1_1mm_0003_0003_stripped_mask_0003_MNI_T1_1mm_0003.nii.gz
+../../sampledata/mni_masks/MNI_T1_1mm_0004_0004_stripped_mask_0004_MNI_T1_1mm_0004.nii.gz
+../../sampledata/mni_masks/MNI_T1_1mm_0005_0005_stripped_mask_0005_MNI_T1_1mm_0005.nii.gz
+../../sampledata/mni_masks/MNI_T1_1mm_0006_0006_stripped_mask_0006_MNI_T1_1mm_0006.nii.gz
+../../sampledata/mni_masks/MNI_T1_1mm_0007_0007_stripped_mask_0007_MNI_T1_1mm_0007.nii.gz
+../../sampledata/mni_masks/MNI_T1_1mm_0008_0008_stripped_mask_0008_MNI_T1_1mm_0008.nii.gz
+../../sampledata/mni_masks/MNI_T1_1mm_0009_0009_stripped_mask_0009_MNI_T1_1mm_0009.nii.gz
+../../sampledata/mni_masks/MNI_T1_1mm_0010_0010_stripped_mask_0010_MNI_T1_1mm_0010.nii.gz
+../../sampledata/mni_masks/MNI_T1_1mm_0011_0011_stripped_mask_0011_MNI_T1_1mm_0011.nii.gz
+../../sampledata/mni_masks/MNI_T1_1mm_0013_0013_stripped_mask_0013_MNI_T1_1mm_0013.nii.gz
+../../sampledata/mni_masks/MNI_T1_1mm_0015_0015_stripped_mask_0015_MNI_T1_1mm_0015.nii.gz
+../../sampledata/mni_masks/MNI_T1_1mm_0016_0016_stripped_mask_0016_MNI_T1_1mm_0016.nii.gz
+../../sampledata/mni_masks/MNI_T1_1mm_0017_0017_stripped_mask_0017_MNI_T1_1mm_0017.nii.gz
