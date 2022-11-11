@@ -289,3 +289,79 @@ $ sh sample_testing.sh
 ```
 The output segmentation results will appear in the folder `deep-image-pet/estimator/examples/sample_results/`.
 
+## Regression problem
+In our recent work, we proposed a novel imaging physics-based loss function, a line-integral projection (LIP-loss), to learn a CT-derived attenuation map (µ-CT) to derive deep learning-based attenuation map (µ-CT) from PET activity (λ-MLAA) and attenutaion maps (µ-MLAA) estimated by the maximum likelihood reconstruction of activity and attenuation (MLAA) algorithm.
+
+A example **training** script is provided that will train the model with the following parameters:
+```
+SemanticRegressor.py \
+  --train \
+  --device gpu:0 \
+  -d \
+  -i train_2.5pct_G1_input.txt \
+  -t train_2.5pct_G1_target.txt \
+  -o model_FDG_40subj_pct2.5_inG1_tarG1_psz64x64x32_4Angles/ \
+  -loss L1 \
+  -model UNet3d_generalized_nomaxpool_LIL_multiAngle \
+    --opt_learning_rate 0.001 \
+    --opt_learning_decay_rate 0.9747 \
+    --dropout_rate 0.15 \
+    --num_output_channels 1 \
+    --filter_size 3 \
+    --num_levels 4 \
+    --dilation_rate 1 \
+    --num_convs_per_level 2 \
+    --num_filters 64 \
+    --bridge_mode concat \
+    --normalization batch \
+    --alpha_GDL 1.0 \
+    --weight_LIL 0.2 \
+    --num_angle 4 \
+  --patch_size 64 64 32 \
+  --pad_size 0 0 8 \
+  --pad_type edge \
+  --num_epochs 160 \
+  --epoch_size 10000 \
+  --batch_size 16
+```
+
+**Note:** `--weight_LIL WEIGHT_LIL` is the weight for LIP-loss and `--alpha_GDL WEIGHT_GDL` is the weight for GDL-loss (Please refer to the paper below for details). If the LIP-loss is applied, `--num_angle ANGLE_SIZE ` needs to be set for providing the number of LIP angles.
+
+A example **testing** script is provided that will use the model to make predictions using test data (not included in the training) with the following parameters:
+```
+SemanticRegressor.py \
+  -d \
+  --device gpu:0 \
+  -i predict_2.5pct_G1_input.txt \
+  -o predicted_47subj_2.5pct_inG1_4Angles/ \
+  -model_path model_FDG_40subj_pct2.5_inG1_tarG1_psz64x64x32_4Angles/ \
+  --smoothing_sigma 0.25 \
+  --stride_size 256 256 16 \
+  -model UNet3d_generalized_nomaxpool_LIL_multiAngle \
+    --dropout_rate 0.00 \
+    --num_output_channels 1 \
+    --filter_size 3 \
+    --num_levels 4 \
+    --dilation_rate 1 \
+    --num_convs_per_level 2 \
+    --num_filters 64 \
+    --bridge_mode concat \
+    --normalization batch \
+  --patch_size 256 256 32 \
+  --pad_size 0 0 8 \
+  --pad_type edge \
+  --batch_size 1
+  
+```
+
+### Citation
+If you use this code for your research or project, please cite:
+
+    @article{toyonaga2022deep,
+      title={Deep learning--based attenuation correction for whole-body PET—a multi-tracer study with 18F-FDG, 68 Ga-DOTATATE, and 18F-Fluciclovine},
+      author={Toyonaga, Takuya and Shao, Dan and Shi, Luyao and Zhang, Jiazhen and Revilla, Enette Mae and Menard, David and Ankrah, Joseph and Hirata, Kenji and Chen, Ming-Kai and Onofrey, John A and others},
+      journal={European Journal of Nuclear Medicine and Molecular Imaging},
+      pages={1--12},
+      year={2022},
+      publisher={Springer}
+      }
