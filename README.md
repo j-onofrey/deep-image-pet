@@ -2,6 +2,32 @@
 
 DeepImage-Pet is a software framework for training and running deep neural networks using TensorFlow. This code is part of the [BioImage Suite](https://github.com/bioimagesuiteweb) family of software tools for biomedical image analysis. This framework can be used to perform either segmentation (classification) or regression in both 2D and 3D imaging data.
 
+## Paper reference
+Deep learning–based attenuation correction for whole-body PET—a multi-tracer study with 18F-FDG, 68 Ga-DOTATATE, and 18F-Fluciclovine, EJNMMI 2022
+[[Paper](https://link.springer.com/article/10.1007/s00259-022-05748-2)]
+
+    @article{toyonaga2022deep,
+      title={Deep learning--based attenuation correction for whole-body PET—a multi-tracer study with 18F-FDG, 68 Ga-DOTATATE, and 18F-Fluciclovine},
+      author={Toyonaga, Takuya and Shao, Dan and Shi, Luyao and Zhang, Jiazhen and Revilla, Enette Mae and Menard, David and Ankrah, Joseph and Hirata, Kenji and Chen, Ming-Kai and Onofrey, John A and others},
+      journal={European Journal of Nuclear Medicine and Molecular Imaging},
+      pages={1--12},
+      year={2022},
+      publisher={Springer}
+      }
+
+A novel loss function incorporating imaging acquisition physics for PET attenuation map generation using deep learning, MICCAI 2019
+[[Paper](https://link.springer.com/chapter/10.1007/978-3-030-32251-9_79)]
+
+    @inproceedings{shi2019novel,
+      title={A novel loss function incorporating imaging acquisition physics for PET attenuation map generation using deep learning},
+      author={Shi, Luyao and Onofrey, John A and Revilla, Enette Mae and Toyonaga, Takuya and Menard, David and Ankrah, Joseph and Carson, Richard E and Liu, Chi and Lu, Yihuan},
+      booktitle={International conference on medical image computing and computer-assisted intervention},
+      pages={723--731},
+      year={2019},
+      organization={Springer}
+      } 
+  
+
 ## Tutorial
 Assuming you have cloned the DeepImage repository, you can find example scripts referenced in `deep-image-pet/estimator/examples/`.
 
@@ -353,15 +379,3 @@ SemanticRegressor.py \
   --batch_size 1
   
 ```
-
-### Citation
-If you use this code for your research or project, please cite:
-
-    @article{toyonaga2022deep,
-      title={Deep learning--based attenuation correction for whole-body PET—a multi-tracer study with 18F-FDG, 68 Ga-DOTATATE, and 18F-Fluciclovine},
-      author={Toyonaga, Takuya and Shao, Dan and Shi, Luyao and Zhang, Jiazhen and Revilla, Enette Mae and Menard, David and Ankrah, Joseph and Hirata, Kenji and Chen, Ming-Kai and Onofrey, John A and others},
-      journal={European Journal of Nuclear Medicine and Molecular Imaging},
-      pages={1--12},
-      year={2022},
-      publisher={Springer}
-      }
