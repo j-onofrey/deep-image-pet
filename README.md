@@ -3,7 +3,17 @@
 DeepImage-Pet is a software framework for training and running deep neural networks using TensorFlow. This code is part of the [BioImage Suite](https://github.com/bioimagesuiteweb) family of software tools for biomedical image analysis. This framework can be used to perform either segmentation (classification) or regression in both 2D and 3D imaging data.
 
 ## Paper reference
-Deep learning–based attenuation correction for whole-body PET—a multi-tracer study with 18F-FDG, 68 Ga-DOTATATE, and 18F-Fluciclovine, EJNMMI 2022
+Shi L, Zhang J, Toyonaga T, et al. **Deep learning-based attenuation map generation with simultaneously reconstructed PET activity and attenuation and low-dose application[J].** Physics in Medicine and Biology, 2022.
+[[Paper](https://iopscience.iop.org/article/10.1088/1361-6560/acaf49/meta)]
+
+    @article{shi2022deep,
+      title={Deep learning-based attenuation map generation with simultaneously reconstructed PET activity and attenuation and low-dose application},
+      author={Shi, Luyao and Zhang, Jiazhen and Toyonaga, Takuya and Shao, Dan and Onofrey, John A and Lu, Yihuan},
+      journal={Physics in Medicine and Biology},
+      year={2022}
+    }
+
+Toyonaga T, Shao D, Shi L, et al. **Deep learning–based attenuation correction for whole-body PET—a multi-tracer study with 18F-FDG, 68 Ga-DOTATATE, and 18F-Fluciclovine[J].** European Journal of Nuclear Medicine and Molecular Imaging, 2022: 1-12.
 [[Paper](https://link.springer.com/article/10.1007/s00259-022-05748-2)]
 
     @article{toyonaga2022deep,
@@ -15,7 +25,7 @@ Deep learning–based attenuation correction for whole-body PET—a multi-tracer
       publisher={Springer}
       }
 
-A novel loss function incorporating imaging acquisition physics for PET attenuation map generation using deep learning, MICCAI 2019
+Shi L, Onofrey J A, Revilla E M, et al. **A novel loss function incorporating imaging acquisition physics for PET attenuation map generation using deep learning[C].** International conference on medical image computing and computer-assisted intervention. Springer, Cham, 2019: 723-731.
 [[Paper](https://link.springer.com/chapter/10.1007/978-3-030-32251-9_79)]
 
     @inproceedings{shi2019novel,
